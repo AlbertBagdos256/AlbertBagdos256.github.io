@@ -1,0 +1,105 @@
+.skills {
+ background: #18054b;
+   
+    svg {
+        display: block;
+        font: 10.5em 'Montserrat';
+        width: 760px;
+        height: 300px;
+        margin: 0 auto;
+        .lg-block({
+           width: 600px;
+           height: 230px; 
+        });
+        .md-block({
+           width: 500px; 
+        });
+        .sm-block({
+           width: 280px; 
+        });
+    }
+    
+    .text-copy {
+        fill: none;
+        stroke: white;
+        stroke-dasharray: 6% 29%;
+        stroke-width: 5px;
+        stroke-dashoffset: 0%;
+        animation: stroke-offset 5.5s infinite linear;
+    }
+    
+    .text-copy:nth-child(1){
+        stroke: #4D163D;
+        animation-delay: -1;
+    }
+    
+    .text-copy:nth-child(2){
+        stroke: #840037;
+        animation-delay: -2s;
+    }
+    
+    .text-copy:nth-child(3){
+        stroke: #BD0034;
+        animation-delay: -3s;
+    }
+    
+    .text-copy:nth-child(4){
+        stroke: #BD0034;
+        animation-delay: -4s;
+    }
+    
+    .text-copy:nth-child(5){
+        stroke: #FDB731;
+        animation-delay: -5s;
+    }
+    
+    @keyframes stroke-offset{
+        100% {stroke-dashoffset: -35%;}
+    }
+p  {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(226, 54, 48);
+  line-height: 50px;
+  .md-block({
+     line-height: 30px;
+     font-size: 20px; 
+  });
+}
+.skill {
+    margin-top: 70px;
+    text-align: center;
+    
+    .fix {
+        text-align: left;
+        color: #fff;
+        
+    }
+    
+    /* Make sure that padding behaves as expected */
+    * {box-sizing:border-box}
+    
+    /* Container for skill bars */
+    .container1 {
+      width: 100%; /* Full width */
+       /* Grey background */
+    }
+    
+    .skills {
+      text-align: right; /* Right-align text */
+      padding: 10px; /* Add some padding */
+      color: white; /* White text color */
+    }
+    
+    .html {width: 90%; background-color: rgb(209, 96, 30);} /* Green */
+    .css {width: 80%; background-color: #2196F3;} /* Blue */
+    .js {width: 50%; background-color: #ebfa19;} /* Red */
+    .php {width: 60%; background-color: #00e6e6;} /* Dark Grey */
+    .python {width: 10%; background-color: #1000f7;} /* Dark Grey */
+    
+}
+
+
+
+
+}

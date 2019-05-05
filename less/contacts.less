@@ -1,0 +1,77 @@
+.contacts {
+    overflow: hidden;
+    background: #000;
+    text-align: center;
+  
+    h2 {
+        font-size: 40px;
+        color: rgba(27, 155, 240, 0.986);
+        line-height: 190px;
+     text-align: center;
+    }
+    i {
+        color: #fff;
+        font-size: 100px;
+        margin-top: 40px;
+    }
+    p {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+    h3 {
+    text-align: center;
+    margin-top: 90px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    }
+    
+    @mixin center(){
+        -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+          left:50%;
+          top:50%;
+      }
+      
+      
+     
+     
+
+      .ll{
+        position:absolute;
+        left: 3%;
+        @include center();
+        
+      }
+      .title{
+        font-weight: 800;
+        color: transparent;
+        font-size:120px;
+        background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+        background-position: 40% 50%;
+        -webkit-background-clip: text;
+        position:relative;
+        text-align:center;
+        line-height:90px;
+        letter-spacing: -8px;
+        .lg-block({
+           font-size: 90px; 
+        });
+        .md-block({
+           font-size: 70px; 
+           line-height: 70px;
+        });
+        .sm-block({
+           font-size: 30px;
+           line-height: 40px; 
+           letter-spacing: 1px;
+        });
+      }
+   
+}
