@@ -1,0 +1,53 @@
+.team {
+    padding: 100px 0 150px;
+    text-align: center;
+    .slider {
+        margin-top: 100px;
+    }
+    .member {
+        position: relative;
+        &:hover .overlay {
+            opacity: 1;
+        }
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(76, 118, 255, .95);
+        height: 100%;
+        padding: 15px 20px;
+        color: @white;
+        font-family: 'Open Sans';
+        opacity: 0;
+        transition: 500ms;
+        h6 {
+            font-family: 'Open Sans';
+            line-height: 18px;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 13px;
+            line-height: 20px;
+            .media(display,none,476px);
+        }
+    }
+    .social-link {
+        width: 35px;
+        height: 35px;
+        background: rgba(0, 0, 0, .3);
+        display: inline-block;
+        line-height: 35px;
+        .fa {
+            color: @white;
+            font-size: 18px;
+        }
+    }
+    .social {
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        left: 0;
+    }
+}

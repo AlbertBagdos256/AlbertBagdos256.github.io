@@ -1,0 +1,37 @@
+.features {
+    padding: 80px 0 120px;
+    background: #efefef;
+    font-family: 'Open Sans';
+ 
+    .feature {
+        display: flex;
+        .lg-block({
+            margin-bottom: 20px;
+        });
+        .sm-block({
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        });
+        .image {
+            width: 100px;
+            margin-right: 15px;
+            .sm-block({
+                margin-right: 0;
+                margin-bottom: 10px;
+            });
+        }
+        h5 {
+            font-size: 17px;
+            color: @font1;
+            margin-bottom: 17px;
+            font-weight: 600;
+        }
+        p {
+            color: @font1;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+    }
+}
