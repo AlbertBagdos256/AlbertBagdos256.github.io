@@ -12,7 +12,7 @@ $(document).ready(function () {
       else {
           $burger.fadeOut();
       }
-      console.log(scroll);
+   
    })
   $burger.click(function () {
       $menu.addClass('menu-active')
