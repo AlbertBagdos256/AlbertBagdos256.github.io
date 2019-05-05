@@ -30,6 +30,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: 100000;
+  overflow:hidden;
 }
 html {
   width: 100%;
