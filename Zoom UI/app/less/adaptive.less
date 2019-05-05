@@ -1,0 +1,43 @@
+.adaptive {
+    background: #34363a;
+    padding-top: 220px;
+    font-family: 'Montserrat';
+  overflow: hidden;
+    .phonebox {
+        display: flex;
+       padding: 20px 0; 
+        margin: 20px 0 60px;
+        padding-left: 17px;
+        transition: 300ms;
+        &:hover {
+            background: rgba(16, 180, 185, 0.521);
+        }
+        .md-block({
+            margin: 10px 0 30px;
+            padding: 10px 0;
+        });
+    }
+    .image {
+        min-width: 30px;
+        margin-right: 40px;
+    }
+    .desc {
+        h5 {
+            font-size: 22px;
+            font-weight: 400;
+         color: @white;
+         
+        }
+        p {
+            font-size: 17px;
+            font-weight: 200;
+           color: #9da6ac; 
+           margin-top: 15px;
+           
+        }
+    }
+    
+    .iphone {
+        .lg(display, none);
+    }
+}

@@ -1,0 +1,131 @@
+header {
+    height: 100vh;
+    .bg('../img/headerbgpng.png');
+    background-size: cover;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-active {
+     transform: translateX(-165%);
+    
+    }
+    .header-menu {
+           margin-left: 50px;
+        display: flex;
+       
+     .md-block({
+        flex-direction: column;
+         position: fixed;
+         right: -65%;
+         top: 0;
+         height: 100vh;
+         background: #000;
+          justify-content: center;
+          z-index: 100;
+          width: 39%;
+          transition: 800ms;
+          opacity: .8;
+     });
+   
+    }
+    .menu-link {
+        color: @white;
+        text-decoration: none;
+        font-size: 15px;
+        &:hover {
+            &::before {
+                opacity: .9;
+            }
+            .md(color,black);
+        }
+        &::before {
+            content: '';
+            transition: 1s;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: @white;
+            position: relative;
+            bottom: 19px;
+            opacity: 0;
+            .md(display, none);
+        }
+        
+    }
+    .logo {
+        font-size: 40px;
+        font-weight: 600;
+        color: @white;
+       
+    }
+    a {
+        text-decoration: none;
+    }
+    .menu-top {
+        padding: 20px 0;
+         background: #000000;
+         opacity: .7; 
+        z-index: 999;
+        
+    }
+    .menu-item {
+        margin: 0 15px;
+        list-style: none;
+        .md-block({
+           margin: 20px 0; 
+           text-align: center;
+        z-index: 999 !important;
+        });
+        a {
+            font-weight: 900;
+        }
+    }
+    .burger {
+        background: transparent;
+        border: 2px solid @white;
+        padding: 5px 15px;
+        border-radius: 4px;
+        color: @white;
+        font-size: 13px;
+        margin-right: 50px;
+        cursor: pointer;
+        display: none;
+        .fa {
+            color: @white;
+        }
+        .md-block({
+            display: block;
+            z-index: 101;
+            
+        })
+    }
+    .header-title {
+    
+    position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 40%;
+        h1 {
+            color: @white;
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            .md(font-size, 30px);
+        }
+        .biton {
+            img {
+                width: 200px;
+                .md(width, 150px);
+            }
+        }
+    }
+    
+    
+}
+/* @media(max-width: 769px) {
+    .menu-link {
+        display: none;
+    }
+} */
