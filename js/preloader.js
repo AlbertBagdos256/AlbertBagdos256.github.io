@@ -5,4 +5,3 @@
     $loader.fadeOut();
     $preloader.delay(350).fadeOut('slow');
   });
-  
